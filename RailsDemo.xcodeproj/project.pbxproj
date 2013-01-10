@@ -16,6 +16,18 @@
 		5D517AE9169E1B82005504C3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D517AE8169E1B82005504C3 /* Default.png */; };
 		5D517AEB169E1B82005504C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D517AEA169E1B82005504C3 /* Default@2x.png */; };
 		5D517AED169E1B82005504C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D517AEC169E1B82005504C3 /* Default-568h@2x.png */; };
+		5D517AF5169E1CC3005504C3 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517AF4169E1CC3005504C3 /* PostsViewController.m */; };
+		5D517B11169E1F6D005504C3 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B0F169E1F6D005504C3 /* InputViewController.m */; };
+		5D517B12169E1F6D005504C3 /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D517B10169E1F6D005504C3 /* InputViewController.xib */; };
+		5D517B14169E2797005504C3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D517B13169E2797005504C3 /* CoreData.framework */; };
+		5D517B1D169E2A71005504C3 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B1C169E2A71005504C3 /* Post.m */; };
+		5D517B2F169E2AA7005504C3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B21169E2AA7005504C3 /* NSData+Base64.m */; };
+		5D517B30169E2AA7005504C3 /* NSMutableArray+NSRails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B23169E2AA7005504C3 /* NSMutableArray+NSRails.m */; };
+		5D517B31169E2AA7005504C3 /* NSString+Inflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B25169E2AA7005504C3 /* NSString+Inflection.m */; };
+		5D517B32169E2AA7005504C3 /* NSRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B28169E2AA7005504C3 /* NSRConfig.m */; };
+		5D517B33169E2AA7005504C3 /* NSRRemoteManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B2A169E2AA7005504C3 /* NSRRemoteManagedObject.m */; };
+		5D517B34169E2AA7005504C3 /* NSRRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B2C169E2AA7005504C3 /* NSRRemoteObject.m */; };
+		5D517B35169E2AA7005504C3 /* NSRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D517B2E169E2AA7005504C3 /* NSRRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +44,29 @@
 		5D517AE8169E1B82005504C3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5D517AEA169E1B82005504C3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5D517AEC169E1B82005504C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5D517AF3169E1CC2005504C3 /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
+		5D517AF4169E1CC3005504C3 /* PostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
+		5D517B0E169E1F6D005504C3 /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		5D517B0F169E1F6D005504C3 /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		5D517B10169E1F6D005504C3 /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
+		5D517B13169E2797005504C3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5D517B1B169E2A71005504C3 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = RailsDemo/Post.h; sourceTree = "<group>"; };
+		5D517B1C169E2A71005504C3 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = RailsDemo/Post.m; sourceTree = "<group>"; };
+		5D517B20169E2AA7005504C3 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		5D517B21169E2AA7005504C3 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		5D517B22169E2AA7005504C3 /* NSMutableArray+NSRails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NSRails.h"; sourceTree = "<group>"; };
+		5D517B23169E2AA7005504C3 /* NSMutableArray+NSRails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NSRails.m"; sourceTree = "<group>"; };
+		5D517B24169E2AA7005504C3 /* NSString+Inflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Inflection.h"; sourceTree = "<group>"; };
+		5D517B25169E2AA7005504C3 /* NSString+Inflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Inflection.m"; sourceTree = "<group>"; };
+		5D517B26169E2AA7005504C3 /* NSRails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRails.h; sourceTree = "<group>"; };
+		5D517B27169E2AA7005504C3 /* NSRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRConfig.h; sourceTree = "<group>"; };
+		5D517B28169E2AA7005504C3 /* NSRConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRConfig.m; sourceTree = "<group>"; };
+		5D517B29169E2AA7005504C3 /* NSRRemoteManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRemoteManagedObject.h; sourceTree = "<group>"; };
+		5D517B2A169E2AA7005504C3 /* NSRRemoteManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRemoteManagedObject.m; sourceTree = "<group>"; };
+		5D517B2B169E2AA7005504C3 /* NSRRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRemoteObject.h; sourceTree = "<group>"; };
+		5D517B2C169E2AA7005504C3 /* NSRRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRemoteObject.m; sourceTree = "<group>"; };
+		5D517B2D169E2AA7005504C3 /* NSRRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRRequest.h; sourceTree = "<group>"; };
+		5D517B2E169E2AA7005504C3 /* NSRRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D517B14169E2797005504C3 /* CoreData.framework in Frameworks */,
 				5D517AD7169E1B82005504C3 /* UIKit.framework in Frameworks */,
 				5D517AD9169E1B82005504C3 /* Foundation.framework in Frameworks */,
 				5D517ADB169E1B82005504C3 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +87,8 @@
 		5D517AC7169E1B82005504C3 = {
 			isa = PBXGroup;
 			children = (
+				5D517B1B169E2A71005504C3 /* Post.h */,
+				5D517B1C169E2A71005504C3 /* Post.m */,
 				5D517ADC169E1B82005504C3 /* RailsDemo */,
 				5D517AD5169E1B82005504C3 /* Frameworks */,
 				5D517AD3169E1B82005504C3 /* Products */,
@@ -68,6 +106,8 @@
 		5D517AD5169E1B82005504C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D517B1E169E2AA7005504C3 /* NSRails */,
+				5D517B13169E2797005504C3 /* CoreData.framework */,
 				5D517AD6169E1B82005504C3 /* UIKit.framework */,
 				5D517AD8169E1B82005504C3 /* Foundation.framework */,
 				5D517ADA169E1B82005504C3 /* CoreGraphics.framework */,
@@ -80,6 +120,11 @@
 			children = (
 				5D517AE5169E1B82005504C3 /* AppDelegate.h */,
 				5D517AE6169E1B82005504C3 /* AppDelegate.m */,
+				5D517AF3169E1CC2005504C3 /* PostsViewController.h */,
+				5D517AF4169E1CC3005504C3 /* PostsViewController.m */,
+				5D517B0E169E1F6D005504C3 /* InputViewController.h */,
+				5D517B0F169E1F6D005504C3 /* InputViewController.m */,
+				5D517B10169E1F6D005504C3 /* InputViewController.xib */,
 				5D517ADD169E1B82005504C3 /* Supporting Files */,
 			);
 			path = RailsDemo;
@@ -97,6 +142,37 @@
 				5D517AEC169E1B82005504C3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D517B1E169E2AA7005504C3 /* NSRails */ = {
+			isa = PBXGroup;
+			children = (
+				5D517B1F169E2AA7005504C3 /* Categories */,
+				5D517B26169E2AA7005504C3 /* NSRails.h */,
+				5D517B27169E2AA7005504C3 /* NSRConfig.h */,
+				5D517B28169E2AA7005504C3 /* NSRConfig.m */,
+				5D517B29169E2AA7005504C3 /* NSRRemoteManagedObject.h */,
+				5D517B2A169E2AA7005504C3 /* NSRRemoteManagedObject.m */,
+				5D517B2B169E2AA7005504C3 /* NSRRemoteObject.h */,
+				5D517B2C169E2AA7005504C3 /* NSRRemoteObject.m */,
+				5D517B2D169E2AA7005504C3 /* NSRRequest.h */,
+				5D517B2E169E2AA7005504C3 /* NSRRequest.m */,
+			);
+			name = NSRails;
+			path = RailsDemo/Source;
+			sourceTree = "<group>";
+		};
+		5D517B1F169E2AA7005504C3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5D517B20169E2AA7005504C3 /* NSData+Base64.h */,
+				5D517B21169E2AA7005504C3 /* NSData+Base64.m */,
+				5D517B22169E2AA7005504C3 /* NSMutableArray+NSRails.h */,
+				5D517B23169E2AA7005504C3 /* NSMutableArray+NSRails.m */,
+				5D517B24169E2AA7005504C3 /* NSString+Inflection.h */,
+				5D517B25169E2AA7005504C3 /* NSString+Inflection.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +230,7 @@
 				5D517AE9169E1B82005504C3 /* Default.png in Resources */,
 				5D517AEB169E1B82005504C3 /* Default@2x.png in Resources */,
 				5D517AED169E1B82005504C3 /* Default-568h@2x.png in Resources */,
+				5D517B12169E1F6D005504C3 /* InputViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +243,16 @@
 			files = (
 				5D517AE3169E1B82005504C3 /* main.m in Sources */,
 				5D517AE7169E1B82005504C3 /* AppDelegate.m in Sources */,
+				5D517AF5169E1CC3005504C3 /* PostsViewController.m in Sources */,
+				5D517B11169E1F6D005504C3 /* InputViewController.m in Sources */,
+				5D517B1D169E2A71005504C3 /* Post.m in Sources */,
+				5D517B2F169E2AA7005504C3 /* NSData+Base64.m in Sources */,
+				5D517B30169E2AA7005504C3 /* NSMutableArray+NSRails.m in Sources */,
+				5D517B31169E2AA7005504C3 /* NSString+Inflection.m in Sources */,
+				5D517B32169E2AA7005504C3 /* NSRConfig.m in Sources */,
+				5D517B33169E2AA7005504C3 /* NSRRemoteManagedObject.m in Sources */,
+				5D517B34169E2AA7005504C3 /* NSRRemoteObject.m in Sources */,
+				5D517B35169E2AA7005504C3 /* NSRRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +291,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -224,7 +311,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -234,9 +321,11 @@
 		5D517AF1169E1B82005504C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsDemo/RailsDemo-Prefix.pch";
 				INFOPLIST_FILE = "RailsDemo/RailsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -245,9 +334,11 @@
 		5D517AF2169E1B82005504C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsDemo/RailsDemo-Prefix.pch";
 				INFOPLIST_FILE = "RailsDemo/RailsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

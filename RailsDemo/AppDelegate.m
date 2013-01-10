@@ -7,22 +7,65 @@
 //
 
 #import "AppDelegate.h"
+#import "PostsViewController.h"
+
+#import "NSRConfig.h"
 
 @implementation AppDelegate
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
+@synthesize window, navigationController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [[NSRConfig defaultConfig] setAppURL:@"http://localhost:3000"];
+    
+    window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window.backgroundColor = [UIColor whiteColor];
+    
+    PostsViewController *posts = [[PostsViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:posts];
+    
+    self.window.rootViewController = self.navigationController;
+    
+    [window makeKeyAndVisible];
+    
     return YES;
+    
+}
+
++ (void) alertForError:(NSError *)e
+{
+    NSString *errorString;
+    
+    NSDictionary *validationErrors = [[e userInfo] objectForKey:NSRValidationErrorsKey];
+    
+    if (validationErrors)
+    {
+        errorString = [NSString string];
+        
+        for (NSString *failedProperty in validationErrors)
+        {
+            for (NSString *reason in [validationErrors objectForKey:failedProperty])
+            {
+                errorString = [errorString stringByAppendingFormat:@"%@ %@. ", [failedProperty capitalizedString], reason];
+            }
+        }
+    }
+    else
+    {
+        if (e.domain == NSRRemoteErrorDomain)
+        {
+            errorString = @"Something went wrong.  Please try again later or contact us if this error continues.";
+        }
+        else
+        {
+            errorString = @"There was an error connecting to the server.";
+        }
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
